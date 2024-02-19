@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recDevImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ff11"
+            android:src="@drawable/ic_launcher_background"/>
+        <TextView
+            android:id="@+id/tvVehicalName"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vehicle name:"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/recDevImage"/>
+        <TextView
+            android:id="@+id/tvVehicalNumber"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vehicle number:"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvVehicalName"
+            android:layout_toRightOf="@+id/recDevImage"/>
+
+        <TextView
+            android:id="@+id/recDevName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvVehicalName"
+
+            android:text="Device Name" />
+
+        <TextView
+            android:id="@+id/recDevNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recDevName"
+            android:layout_toRightOf="@+id/tvVehicalNumber"
+            android:text="Device Number" />
+        <LinearLayout
+            android:layout_below="@+id/recDevNum"
+            android:layout_toRightOf="@+id/recDevImage"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latitude"/>
+            <TextView
+                android:id="@+id/tvLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latitude"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
